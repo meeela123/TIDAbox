@@ -1,0 +1,631 @@
+ @charset "UTF-8";
+
+/* 文字色 */
+
+body {
+
+  --main: #272343;
+
+  --sub: #235BC8;
+
+  --sub2:#AFB4DB;
+
+  --title: #2a2a2a;
+
+  --link-hover: #235BC8;
+
+  --bg0: #f0f4f5;
+
+  --bg1: #fffffe;
+
+  --bg2: #cfdae6;
+
+  --bg3: #fff;
+
+  --border1: #aaa;
+
+  --border2: #FFF;
+
+  --border3: #ccc;
+
+  font-family: 'Zen Old Mincho', serif;
+
+  letter-spacing: 0.05em;
+
+}
+
+
+
+/* リンクの設定 */
+
+a {
+
+  color: var(--main);
+
+}
+
+
+
+a:hover {
+
+  text-decoration: none;
+
+  color: var(--link-hover);
+
+}
+
+
+
+/* メニュー部分の設定 */
+
+.menu details {
+
+  margin: 5px 0 0 15px;
+
+}
+
+
+
+.menu summary {
+
+  margin: 0 0 0 -10px;
+
+}
+
+
+
+.menu ul {
+
+  list-style: none;
+
+}
+
+
+
+.menu ul .sub li a {
+
+  margin-left: 5px;
+
+  padding-left: 20px;
+
+}
+
+
+
+.menu ul.sub li a:hover {
+
+  padding-left: 20px;
+
+}
+
+
+
+.menu li {
+
+  color: var(--main);
+
+  text-decoration: none;
+
+}
+
+
+
+.menu li a {
+
+  color: var(--main);
+
+  padding: 0 5px;
+
+  text-decoration: none;
+
+}
+
+
+
+.menu li a:hover {
+
+  background-color: var(--bg2);
+
+}
+
+
+
+.menu li.left a {
+
+  text-align: left;
+
+}
+
+
+
+/* ヘッダー */
+
+header {
+
+  font-size: 11px;
+
+  color: var(--title);
+
+  text-align: center;
+
+}
+
+
+
+header .title {
+
+  font-size: 18px;
+
+  font-family: serif;
+
+}
+
+
+
+/* 見出し設定 */
+
+h1, h2, h3, h4 {
+
+  color: var(--sub);
+
+}
+
+
+
+h1, h3, h4 {
+
+  margin: 0 -5px 15px;
+
+}
+
+
+
+
+
+h1 {
+
+  font-size: 30px;
+
+	font-weight: bold;
+
+	position: relative;
+
+  font-family: 'Zen Antique', serif;
+
+  margin-bottom: 3rem;
+
+}
+
+
+
+h1::before{
+
+content:  '';           /* 空白の要素を作る */
+
+width: 30px;            /* 幅指定 */
+
+height: 1px;            /* 高さ指定 */
+
+background-color: #AFB4DB; /* 背景色指定 */
+
+display:  block;        /* ブロック要素にする */
+
+position:  absolute;    /* 位置調整 */
+
+left:  0;               /* 位置調整 */
+
+bottom: -25px;           /* 位置調整 */
+
+}
+
+
+
+h2 {
+
+  font-size: 16px;
+
+  border-bottom: solid 1px var(--sub);
+
+  background: var(--main);
+
+  color: var(--bg0);
+
+  padding: 8px 10px;
+
+  margin: 15px -5px;
+
+  font-family: 'Sawarabi Mincho', serif;
+
+}
+
+
+
+h2::before{
+
+  content:  '○';
+
+  font-size: 1px;
+
+  padding: 5px;
+
+  vertical-align:10%;
+
+}
+
+
+
+h3 {
+
+  font-size: 16px;
+
+  padding: 5px;
+
+  color: var(--main);
+
+  font-weight: bold;
+
+}
+
+
+
+h3::before {
+
+  content: "▶︎";
+
+  color: var(--sub);
+
+  margin: 0 5px 0 0;
+
+}
+
+
+
+h4 {
+
+  background-color: var(--bg1);
+
+  color: var(--sub);
+
+  padding: 6px ;
+
+  width: 300px;
+
+}
+
+
+
+h4::before{
+
+  content: "（";
+
+  color: var(--main);
+
+  margin: 0 5px 0 0;
+
+  font-weight: bold;
+
+}
+
+
+
+h4::after{
+
+  content: "）";
+
+  color: var(--main);
+
+  margin: 0 0 0 5px;
+
+  font-weight: bold;
+
+}
+
+
+
+h5 {
+
+  display: inline;
+
+  font-size: 1em;
+
+  font-weight: bold;
+
+  line-height: 2.5em;
+
+  padding: 2px 5px;
+
+  background: linear-gradient(transparent 0%, var(--bg2) 0%);
+
+  -webkit-box-decoration-break: clone;
+
+  box-decoration-break: clone;
+
+}
+
+
+
+h6 {
+
+  background-color: var(--bg3);
+
+  color: var(--sub);
+
+  text-align: center;
+
+  font-size: 12px;
+
+  padding: 0 20px ;
+
+  margin: 10px 0;
+
+  width: 35px;
+
+  border-radius: 30px;
+
+  border: dotted 1px var(--sub)
+
+}
+
+
+
+/* 装飾テキスト */
+
+.dia{
+
+  color: var(--sub);
+
+  margin: 0;
+
+}
+
+
+
+/* 装飾用box */
+
+.box1 {
+
+  background-color: var(--bg3);
+
+  border: solid 1px var(--main);
+
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+
+}
+
+
+
+.box2 {
+
+  background-color: var(--bg2);
+
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+
+}
+
+
+
+.box3 {
+
+  background-color: var(--bg0);
+
+  border: dotted 1px var(--link-hover);
+
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+
+}
+
+
+
+.box1, .box2, .box3, .box4 {
+
+  padding: 10px 15px;
+
+  margin: 5px 0;
+
+}
+
+
+
+
+
+/* 装飾boxのタグ */
+
+.tg {
+
+  position: relative;
+
+  margin: 1.4rem 0 0;
+
+}
+
+
+
+.tg:after {
+
+  position: absolute;
+
+  font-weight: 900;
+
+  content: 'KP情報';
+
+  background: var(--sub);
+
+  color: var(--bg0);
+
+  left: 0px;
+
+  bottom: 100%;
+
+  border-radius: 5px 5px 0 0;
+
+  padding: 5px 7px 3px;
+
+  font-size: 0.7em;
+
+  line-height: 1;
+
+  letter-spacing: 0.05em;
+
+}
+
+
+
+/* 装飾boxの角を丸める */
+
+.rd {
+
+  border-radius: 10px;
+
+}
+
+
+
+/* 水平線 */
+
+hr {
+
+	border-top: 1px dotted var(--border3);
+
+}
+
+
+
+/* 更新履歴 */
+
+.history {
+
+  font-size: 8px;
+
+  text-align: right;
+
+  border-top: 1px dotted var(--border3);
+
+  margin: 10px 15px 30px;
+
+  padding: 20px 10px;
+
+}
+
+
+
+/* 概要情報テーブル */
+
+table.overview {
+
+  width: 70%;
+
+  margin: 40px auto;
+
+  border-collapse: collapse;
+
+}
+
+
+
+table.overview th,td {
+
+  padding: 14px;
+
+  text-align: left;
+
+  font-weight: normal;
+
+  border-bottom: 1px solid #646566;
+
+}
+
+
+
+table.overview th {
+
+  font-weight: bold;
+
+}
+
+
+
+td span {
+
+  font-size: 90%;
+
+}
+
+
+
+/* 上へスクロール */
+
+#page_top {
+
+  width: 50px;
+
+  height: 50px;
+
+  position: fixed;
+
+  right: 0;
+
+  bottom: 0;
+
+  background: var(--sub);
+
+  opacity: 0.6;
+
+}
+
+
+
+#page_top a {
+
+  position: relative;
+
+  display: block;
+
+  width: 50px;
+
+  height: 50px;
+
+  text-decoration: none;
+
+}
+
+
+
+#page_top a:hover {
+
+  background: var(--link-hover);
+
+  opacity: 0.8;
+
+}
+
+
+
+#page_top a::before {
+
+  content: '▲';
+
+  font-size: 20px;
+
+  color: var(--bg0);
+
+  position: absolute;
+
+  width: 25px;
+
+  height: 25px;
+
+  top: 0;
+
+  bottom: 0;
+
+  right: 0;
+
+  left: 0;
+
+  margin: auto;
+
+  text-align: center;
+
+}
+
+/*# sourceMappingURL=common.css.map */
