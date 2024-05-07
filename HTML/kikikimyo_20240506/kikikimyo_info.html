@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- original CSS -->
+    <link rel="stylesheet" href="assets/css/common.css">
+
+    <!-- Google Fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Noto Sans JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- ZEN Old Mincho & Kaku Gothic -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+    <title>鬼氛歸命 - きききみょう -</title>
+  </head>
+  <body oncopy="rubyCopy()" style="visibility: hidden;" onLoad="document.body.style.visibility='visible'">
+    <!-- mobile size modal start-->
+    <div id="mobile-main-index"></div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title--sample">鬼氛歸命 - きききみょう -</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body mx-4">
+            <!-- mobile size index-->
+            <my-sp-index></my-sp-index>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile size modal end-->
+    <div class="row sample mx-auto mx-md-0 px-0">
+      <div class="nav col-md-3 pe-0 bg-light d-block">
+        <!-- PCsize menu item-->
+        <my-pc-index></my-pc-index>
+      </div>
+      <div class="main offset-md-1 col-md-7 px-4 px-md-0">
+        <div class="sample_info my-5">
+          <div class="row sample_section_inner text-center my-5 pt-5 pt-md-0 mx-auto">
+            <div class="col-6 text-start link-page ps-0"><a href="sample1.html" class="text-link"><span><img class="arrow arrow-back mt-0" src="./assets/images/next.svg"></span>シナリオ表記スタイル</a></div>
+            <div class="col-6 text-end link-page pe-0"><a href="kikikimyo_forKP.html" class="text-link">KP情報<span><img class="arrow arrow-next mt-0" src="./assets/images/next.svg"></span></a></div>
+          </div>
+          <chapter-style id="info_top">
+            シナリオ概要
+          </chapter-style>
+          <div>
+            <section-style id="info_01">
+              あらすじ
+            </section-style>
+            <main-text>
+              "最近どうにも、街に死体が多いらしい。"<br>
+              HO2は葬儀屋に頼まれ街の噂について調査を進めるうち、<br>
+              故あってHO1が独り住まう山内の廃寺に滞在することになる。<br>
+              <br>
+              知れぬ相手といくつかの夜を過ごすにつれて、探索者たちの間には奇妙な縁が生まれていく。<br>
+              <br>
+              ————雨は<ruby-style ruby="は">霽</ruby-style>れ月は<ruby-style ruby="もうろう">朦朧</ruby-style>の夜。<ruby-style ruby="けぶ">煙</ruby-style>る山が孕む秘密を誰も知らない。<br>
+              <br>
+              ＜　山奥／死体／ふたり暮らし　＞
+            </main-text>
+          </div>
+          <div>
+            <section-style id="info_02">
+              シナリオ概要
+            </section-style>
+            <data-list-style>
+              <dt class="col-4">人数</dt>
+                <dd class="col-8">２人固定</dd>
+                <dt class="col-4">時間</dt>
+                <dd class="col-8">～１０時間</dd>
+                <dt class="col-4">舞台</dt>
+                <dd class="col-8">現代日本（秋くらい、山奥）</dd>
+                <dt class="col-4">特記</dt>
+                <dd class="col-8">ロスト有、後遺症有</dd>
+                <dt class="col-4">推奨技能</dt>
+                <dd class="col-8">HOごとに有（秘匿）</dd>
+            </data-list-style>
+            <div>
+              <paragraph-style id="info_02-1">
+                公開ハンドアウト
+              </paragraph-style>
+              <list-style>
+                <list-item>
+                  <bold-style>［　HO1　愛煙家　］</bold-style>
+                    ※新規限定<br>
+                    愛煙家であり、常に煙草を持ち歩いている。<br>
+                    長らく山奥でひとり生活しており、世間知らずな一面がある。<br>
+                    ある日やってきたHO2を一時的に住まわせるようだ。
+                </list-item>
+                <list-item>
+                  <bold-style>［　HO2　嫌煙家　］</bold-style>
+                  ※新規継続可<br>
+                  昔からどうにも煙草というものが好きになれず、嫌煙家だ。<br>
+                  普段は葬儀屋としてそれなりに働いている、或いは葬儀屋と関係がある。<br>
+                  ある日HO1の住む山を訪れ、一時的に宿を借りることとなる。
+                </list-item>
+              </list-style>
+              <main-text>
+                上記の他、秘匿ハンドアウトがそれぞれに存在する。<br>
+                HOによって得られる情報や取れる行動の量が異なることに留意してほしい。
+              </main-text>
+            </div>
+            <div>
+              <paragraph-style id="info_02-2">
+                使用ルルブ/サプリ
+              </paragraph-style>
+              <main-text>
+                ６版、マレモン（旧６版）、2015をもとにシナリオを作成している。<br>
+                KPPLともに【基本ルールブックの所持】を前提にしている。サプリについては未所持でも進行可能だが、有事の際にマレモン（旧６版）を参照できるとより安心できる。
+              </main-text>
+            </div>
+            <div>
+              <paragraph-style id="info_02-3">
+                難易度設定
+              </paragraph-style>
+              <list-style>
+                <list-item>
+                  <bold-style>PL難易度</bold-style><br>
+                  個別行動や個別情報がそれなりにあり、情報を捌くことに慣れているとより良い。<br>
+                  情報精査は起こり得るが謎解きは発生せず、過度に難しくはない。
+                </list-item>
+                <list-item>
+                  <bold-style>KP難易度</bold-style><br>
+                  ほどほどに慣れている人向け。過度に難しくはない。
+                </list-item>
+              </list-style>
+            </div>
+          </div>
+          <div>
+            <section-style id="info_03">
+              注意事項
+            </section-style>
+            <main-text>
+              この作品はフィクションです。実在の人物や団体、土地および地名をモデルとする箇所がありますが、一切関係ありません。架空の事件や病気について扱う描写が存在しますが、それらを軽視する目的や意図はありません。<br>
+              特定の思想や宗教などを批判・擁護する目的はなく、あらゆる差別や犯罪を正当化、助長、肯定するものではありません。<br>
+              <br>
+              また、作品内に暴力表現や残酷表現が含まれます。KPの際はPLに合わせて注意喚起をお願いします。また、災害を想起するおそれのある描写が発生します。
+            </main-text>
+          </div>
+          <div>
+            <section-style id="info_04">
+              参考作品
+            </section-style>
+            <main-text>
+              「青頭巾」（「雨月物語」収録作品）
+            </main-text>
+          </div>
+          <div>
+            <section-style id="info_05">
+              利用規約
+            </section-style>
+            <main-text>
+              （禁止事項）
+            </main-text>
+            <list-style>
+              <list-item>
+                <bold-style>公の場でのネタバレ</bold-style><br>
+                概要に記載している内容以外はすべてネタバレとして取り扱ってください<br>
+                ネタバレを含む内容はワンクッションをお願いします<br>
+                付属素材もネタバレを含むものはワンクッションが必要です
+              </list-item>
+              <list-item>
+                <bold-style>トレーラー画像の使用</bold-style>
+              </list-item>
+              <list-item>
+                <bold-style>付属素材のセッション外での利用</bold-style>
+              </list-item>
+              <list-item>
+                <bold-style>無断転載/複製/複写、二次配布（改変含）</bold-style>
+              </list-item>
+              <list-item>
+                <bold-style>商用利用（金銭が発生するものは基本控えてください）</bold-style>
+              </list-item>
+            </list-style>
+            <main-text>
+              上記のことを守った上で、常識と良識の範囲で好きに読んだり回したりして構いません。<br>
+              改変も特に制限しません。その場合、必ずPLには事前に改変がある旨、終了後には改変した部分をお伝えください。すべて各自の責任で、楽しく遊ぶために利用してください。<br>
+              <br>
+              免責事項として、KPPL間で解決すべきトラブルに作者は一切関与せず責任を負いません。<br>
+              <br>
+              シナリオの解釈については基本書かれていること以外はお任せ。<br>
+              致命的にぽかしてるところがあったら教えてください。
+            </main-text>
+          </div>
+          <div>
+            <section-style id="info_06">
+              権利表記
+            </section-style>
+            <main-text>
+              本作は、「 株式会社アークライト 」及び「株式会社KADOKAWA」が権利を有する『クトゥルフ神話TRPG』の二次創作物です。<br>
+              Call of Cthulhu is copyright ©1981, 2015, 2019 by Chaosium Inc. ;all rights reserved. Arranged by Arclight Inc.<br>
+              Call of Cthulhu is a registered trademark of Chaosium Inc.<br>
+              PUBLISHED BY KADOKAWA CORPORATION　「クトゥルフ神話TRPG」
+            </main-text>
+          </div>
+          <div class="row sample_section_inner text-center my-5 pt-5 pt-md-0 mx-auto">
+            <div class="col-6 text-start link-page ps-0"><a href="sample1.html" class="text-link"><span><img class="arrow arrow-back mt-0" src="./assets/images/next.svg"></span>シナリオ表記スタイル</a></div>
+            <div class="col-6 text-end link-page pe-0"><a href="kikikimyo_forKP.html" class="text-link">KP情報<span><img class="arrow arrow-next mt-0" src="./assets/images/next.svg"></span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./assets/js/Main.js"></script>
+    <script language="javascript" type="text/javascript" src="./assets/js/NameChange.js"></script>
+    <script language="javascript" type="text/javascript" src="./assets/js/MySPIndex.js"></script>
+    <script language="javascript" type="text/javascript" src="./assets/js/MyPCIndex.js"></script>
+    <script language="javascript" type="text/javascript" src="./assets/js/RubyCopy.js"></script>
+    <script language="javascript" type="text/javascript" src="./assets/js/CopyButton.js"></script>
+    <script language="javascript" type="text/javascript" src="./assets/js/MyStyle.js"></script>
+    <script language="javascript" type="text/javascript" src="./assets/js/OptionStyle.js"></script>
+    
+  </body>
+</html>

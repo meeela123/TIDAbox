@@ -1,0 +1,505 @@
+@charset "UTF-8";
+
+/* カスタムプロパティ */
+:root {
+  --bg1-color: #eef0ea;
+  --bg2-color: #e9ebe6;
+  --chapter-color: #ef1900;
+  --section-color: #ef1900;
+  --paragraph-color: #ca2322;
+  --index-color: #ca2322;
+  --text-color: #111111;
+  --text-sub-color: #bbbbbb;
+  --link-color: #4d4e43;
+  --link-hover-color:#ca2322;
+  --success-color: #ca2322;
+  --failure-color: #5f9ea0;
+  --info-box-color: #4d4e43;
+  --for-GM-bg-color: #dddddd;
+  --index-paragraph-color: #4d4e43;
+}
+
+/* HTMLスタイル整え */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg1-color);
+  color: var(--text-color);
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 62.5%;
+  text-align: justify;
+  line-height: 1.4em;
+}
+
+/* navbar内整え */
+
+.nav {
+  z-index: 0;
+  background-color: var(--bg2-color)!important;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    z-index: 20;
+  }
+  .navbar .container-fluid {
+    background-color: #eef0ea;
+  }
+}
+
+.navbar {
+  display: block;
+  height:calc( 100vh - 4rem );
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-light .navbar-toggler {
+  border: none!important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none!important;
+}
+
+@media screen and (max-width: 767px) {
+  .sample .navbar {
+    height: 7em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sample .navbar {
+    position: sticky!important;
+    top: 0;
+  }
+}
+
+.modal-title--sample {
+  color: var(--text-color);
+  font-size: 1.6em;
+}
+
+.navbar-subtitle {
+  color: var(--text-color);
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.navbar-title {
+  color: var(--text-color);
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* ナビゲーション内の章整え */
+
+.sample .navbar .navbar-nav .nav-item .nav-link--chapter,
+.modal .navbar-nav .nav-item .nav-link--chapter {
+  border-left: 5px solid var(--index-color);
+  color: var(--index-color);
+  font-size: 1.8em;
+  line-height: 1.5em;
+}
+
+/* ナビゲーション内の節整え */
+
+.sample .navbar .navbar-nav .nav-item .nav-link--section,
+.modal .navbar-nav .nav-item .nav-link--section {
+  color: var(--text-color);
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+/* ナビゲーション内の項整え */
+
+.sample .navbar .navbar-nav .nav-item .nav-link--paragraph,
+.modal .navbar-nav .nav-item .nav-link--paragraph {
+  color: var(--index-paragraph-color);
+  font-size: 1.4em;
+  line-height: 1.7em;
+}
+
+.sample .navbar .navbar-nav .nav-item .nav-link--item,
+.modal .navbar-nav .nav-item .nav-link--item {
+  color: var(--text-color);
+  font-size: 1.3em;
+  line-height: 1.7em;
+}
+
+/* リスト設定 */
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul ul {
+  margin: 0 1.5em;
+}
+
+/* ページ送り矢印整え */
+
+.arrow {
+  width: 1em;
+  margin: 0.3em;
+}
+
+.arrow-back {
+  transform: rotate(180deg);
+}
+
+/* 名前変換 */
+
+.namechange-input {
+  border: solid 1px #dddddd;
+  border-radius: 0.3em;
+  color: var(--text-color);
+  background: #dddddd;
+}
+
+.namechange-input:focus {
+  border: solid 1px var(--chapter-color);
+  box-shadow: none;
+}
+
+.namechange-button {
+  border-radius: 0.3em;
+  line-height: 1.5em;
+  padding: 0.5em 1em;
+  min-width: 90px;
+}
+
+.namechange-button--submit {
+  background-color: var(--chapter-color);
+  border: 1px solid var(--chapter-color);
+  color: #ffffff;
+}
+
+.namechange-button--clear {
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+  color: var(--text-color);
+}
+
+.namechange-opution-box {
+  border:1px solid var(--chapter-color);
+  box-shadow: 4px 4px 1px var(--chapter-color);
+}
+
+.namechange-opution-box__text {
+  color: var(--text-sub-color)
+}
+
+.namechange-item, .namechange-text {
+  color: var(--text-color);
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.namechange-item {
+  color: var(--chapter-color);
+}
+
+/* todoリスト */
+
+.btn--todo {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.btn--todo:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0);
+}
+
+.btn--todo:focus {
+  box-shadow: none!important;
+}
+
+.todo-area {
+  background-color: #ececec;
+  font-size: 1.2em;
+  z-index: 1050;
+}
+
+.todo-area--lg {
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: calc(100vh);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 992px) {
+  .todo-area--lg {
+    height: auto;
+  }
+}
+
+.todo-area--lg::-webkit-scrollbar{
+  display:none;
+}
+
+.todo-area__title {
+  color: var(--text-color);
+  line-height: 1.5em;
+}
+
+.todo-item {
+  border-bottom: solid 1px var(--text-sub-color);
+  vertical-align: middle;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-text {
+  color: var(--text-color);
+}
+
+input[type=checkbox]:checked ~ .todo-text {
+  color: var(--text-sub-color);
+  text-decoration: line-through;
+}
+
+input {
+  accent-color: var(--chapter-color);
+  border-radius: 1em;
+  box-shadow: none;
+}
+
+.todo-area .btn, .todo-area .btn-close {
+  box-shadow: none!important;
+}
+
+/* コピーボタン */
+.copy {
+  width: 1em;
+  margin: 0.3em;
+}
+
+.copy-button {
+  border-radius: 0.3em;
+  box-shadow: 0 0px 2px 0 rgba(0,0,0,0.1);
+  line-height: 1.5em;
+  padding: 0.5em;
+  border: solid 1px var(--bg2-color);
+  color: var(--text-color);
+  font-size: 0.9em;
+}
+
+.copy-button:hover {
+  background-color: var(--bg2-color);
+  border-color: var(--bg2-color);
+  color: var(--text-color);
+}
+
+.copy-button:active {
+  box-shadow: none!important;
+}
+
+.copy-button:focus {
+  box-shadow: 0 0px 2px 0 rgba(0,0,0,0.1);
+}
+
+/* NPCキャラ */
+
+.sample_section_inner--NPC__name {
+  font-size: 1.8em;
+  border-bottom: 1px solid var(--text-sub-color);
+}
+
+.NPC__item {
+  color: var(--text-sub-color);
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.NPC__value {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.NPC__status {
+  border-bottom: 1px solid var(--text-sub-color);
+}
+
+.NPC__other-status {
+ border: 1px solid var(--text-sub-color);
+ border-radius: 0.5em;
+ background-color: var(--for-GM-bg-color);
+}
+
+/* シナリオ本文整え */
+
+.main {
+  z-index: 10;
+}
+
+.sample_section_inner {
+  font-size: 1.4em;
+  line-height: 2.2em;
+  width: 85%;
+}
+
+.sample_section_inner--for-GM {
+  background-color: var(--for-GM-bg-color);
+  font-size: 1.3em;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.sample_section_inner--for-GM_list {
+  color: var(--section-color);
+}
+
+.sample_section_inner--for-GM_list .sample_section_inner--for-GM_list_text {
+  color: var(--text-color);
+}
+
+.sample_section_inner--info-box {
+  border: 2px solid var(--info-box-color);
+}
+
+.link-page {
+  line-height: 1.2em;
+}
+
+.text-link {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.text-link--main {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link-hover-color)!important;
+}
+
+.text-roll {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.text-roll--success {
+  color: var(--success-color);
+}
+
+.text-roll--failure {
+  color: var(--failure-color);
+}
+
+.text-sub {
+  color: var(--text-sub-color);
+}
+
+.sample_section_inner a:hover {
+  color: #888888;
+}
+
+/* テキスト整え+ページ内遷移位置調整 */
+
+.sample_chapter{
+  color: var(--chapter-color);
+  font-size: 3.6em;
+  line-height: 1.8em;
+}
+
+.sample_section{
+  color: var(--text-color);
+  font-family: 'Noto Sans JP', sans-serif;;
+  font-size: 2.2em;
+  line-height: 2.3em;
+  padding-top: 2em;
+}
+
+.sample_section--border {
+  border-top: 1px solid var(--section-color);
+  border-bottom: 1px solid var(--section-color);
+  font-weight: bold;
+  position: relative;
+  width: 85%;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+}
+
+.sample_section--border::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  border-top: solid 3px var(--section-color);
+  border-bottom: solid 3px var(--section-color);
+  margin: 0 10px;
+  z-index: -1;
+}
+
+.sample_paragraph{
+  color: var(--paragraph-color);
+  font-family: 'Noto Sans JP', sans-serif;;
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.4em;
+  padding-top: 3em;
+  width: 85%;
+}
+
+.sample_item{
+  color: var(--text-color);
+  font-family: 'Noto Sans JP', sans-serif;;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.8em;
+  margin-bottom: 1em;
+  padding-top: 4em;
+  margin-top: -1em;
+  width: 85%;
+}
+
+.main_scene {
+  line-height: 1.4em;
+  padding-top: 6em;
+  margin-top: -1em;
+}
+
+.border {
+  border-top: 1px solid var(--text-sub-color)!important;
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .sample_chapter{
+    padding-top: 2.6em;
+    margin-top: -1.8em;
+    line-height: 2.2em;
+  }
+  .sample_section{
+    padding-top: 5em;
+    margin-top: -4em;
+    line-height: 2.5em;
+  }
+  .sample_paragraph{
+    padding-top: 6em;
+    margin-top: -4em;
+    line-height: 1.6em;
+  }
+}
