@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- original CSS -->
+    <link rel="stylesheet" href="assets/css/common.css">
+
+    <!-- Google Fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Noto Sans JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- ZEN Old Mincho & Kaku Gothic -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+    <title>鬼氛歸命 - きききみょう -</title>
+  </head>
+  <body oncopy="rubyCopy()" style="visibility: hidden;" onLoad="document.body.style.visibility='visible'">
+    <!-- mobile size modal start-->
+    <div id="mobile-main-index"></div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title--sample">鬼氛歸命 - きききみょう -</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body mx-4">
+            <!-- mobile size index-->
+            <my-sp-index></my-sp-index>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile size modal end-->
+    <div class="row sample mx-auto mx-md-0 px-0">
+      <div class="nav col-md-3 pe-0 bg-light d-block">
+        <!-- PCsize menu item-->
+        <my-pc-index></my-pc-index>
+      </div>
+      <div class="main offset-md-1 col-md-7 px-4 px-md-0">
+        <div class="sample_info my-5">
+          <div class="row sample_section_inner text-center my-5 pt-5 pt-md-0 mx-auto">
+            <div class="col-6 text-start link-page ps-0"><a href="kikikimyo_info.html" class="text-link"><span><img class="icon icon-back mt-0" src="./assets/images/next.svg"></span>シナリオ概要</a></div>
+            <div class="col-6 text-end link-page pe-0"><a href="kikikimyo_scenario.html" class="text-link">シナリオ本文<span><img class="icon icon-next mt-0" src="./assets/images/next.svg"></span></a></div>
+          </div>
+          <div>
+            <chapter-style id="forKP_top">
+              KP情報
+            </chapter-style>
+            <div>
+              <section-style id="forKP_01">
+                真相
+              </section-style>
+              <main-text>
+                HO1とHO2の住む架空の町、<ruby-style ruby="もがりちょう">虎落町</ruby-style>には古くより「<ruby-style ruby="しかやま">志下山</ruby-style>」という山が存在していた。その昔、"屍と化す山"＝「<ruby-style ruby="しかやま">屍化山</ruby-style>」と呼ばれていたものが変異して現在の名前になっていることを知る者は少ない。<br>
+                遙か昔（1770年ごろ）、屍化山には<highlight-style>キノトグリス（シノーソグリス）、あるいはサイサロス<small-style>（MM P.176）</small-style></highlight-style>と呼ばれるものが山に住み着き、霧の中へと生者を誘い大量に死者を出していた。里の人間は「<ruby-style ruby="きのと">乙</ruby-style>様」と称してキノトグリスを恐れ、探索者として神話的事象に耐性のある僧などからの力を得ながら山に寺を建てることとなる。それ以来キノトグリスの出現自体は落ち着いたが、結果として山には大量の死体が残ることになった。<br>
+                <br>
+                そんな折、死の匂いに誘われてか1匹の<highlight-style>食屍鬼<small-style>（基本 P.180）</small-style></highlight-style>がドリームランドと覚醒世界を繋げて寺を訪れた。僧たちは食屍鬼との共存を選び、食屍鬼もこれを了承し寺に暮らすことになる。その食屍鬼が後にHO1の知り合いとなる鬼・<ruby-style ruby="まるやま">円山</ruby-style>だ。<br>
+                なぜ食屍鬼と人間が共存することになったのか？　彼はドリームランドをねぐらとする食屍鬼ではあるものの、元は覚醒世界で暮らす人間であった。（円山の詳しい出生については<link-style link="#forKP_02">NPCの項目</link-style>を参照すること）<br>
+                <highlight-style>「食屍鬼写本」</highlight-style>の呪いによって人と鬼の両方の側面を持つことになった円山を、寺は「祓い、庇護するべき者」として迎え入れたのだ。もしくは純粋に、処理の追いつかなくなっていた山の遺体の処理に里自体が困っていたのかもしれない。どのような意図であれ彼は受け入れられ、短い時間ではあるが人間たちと共存していた。<br>
+                <br>
+                円山と人間の共存は、円山が山に訪れた人間——のちにHO1の父親となる人物（以後、父親と表記）を空腹に耐えかねてか襲ったことで瓦解する。円山は元人間の食屍鬼であり、加えて父親は<highlight-style>〈D特徴：暗黒の祖先（食屍鬼）〉</highlight-style>を僅かながらに持っていた。それ故か、父親は円山に襲われたことで食屍鬼としての血が混じり濃くなり、結果的に円山と同じように人間と神話生物の両方の素質を持つ者として食屍鬼として生き長らえることとなった。その後、眷属である食屍鬼の気配を察知した<highlight-style>ニョグタ<small-style>（基本 P.222-223）</small-style></highlight-style>がドリームランドより現れる。彼はまず夢を通じて寺の僧に自身を召喚させると、数少ない寺の人間を襲った。その際、人の血肉への欲求に抗えず父親はニョグタの食い荒らした死体を喰らうことになった。<br>
+                <br>
+                その際、一人だけ生き残っていた稚児が<highlight-style>【HO1】</highlight-style>である。<br>
+                <br>
+                当然これまでの人間と同じ暮らしは望めず、父親は人間としての暮らしを捨て家族と別離することを決意した彼は、唯一生き残ったHO1と暮らすことを決めた。この悪鬼さまよう山の中でHO1が長く生きられるよう父親は寺から魔術的な情報を探し当て<highlight-style>〈カーの分配〉</highlight-style>をHO1に施す。〈カーの分配〉によりHO1の心臓を別の場所に移し、自身の心臓とともに眠らせたのだ。<br>
+                <br>
+                これが1920年代ごろの出来事となる。父親はHO1を残して死に、HO1は今も死んだ父親の心臓、そして自分の心臓の近くで生き続けていた。<br>
+                心臓から遠く離れることは難しいため、HO1は寺から出ることなく円山の手助けを借りその一生を過ごしている。<br>
+                よってHO1と父親の間に血のつながりはなく、HO1は魔術をかけられてしまった健常な一人の人間だ。HO1がどうして稚児として寺に住まわっていたか、その詳細についてはこのシナリオで語られることはなく、基本的にはシナリオ終了後PLによって自由に設定されるものとしてほしい。もちろん、不明瞭なままでも構わない。<br>
+                <br>
+                <br>
+                <highlight-style>【HO2】</highlight-style>とHO1が出会うことになるのは、HO2が葬儀会社「<ruby-style ruby="もくめいしゃ">木明社</ruby-style>」とのつながりをもつことを発端とする。<br>
+                <br>
+                キノトグリスによる死者の大量増加により会社としての力を大きくしてきた「木明社」の存在は、ドリームランドを通じて徐々に増え始めた食屍鬼に目をつけられることとなる。これには、父親がHO1の保護を目的に自身のカー（エッセンス）を注ぎきり、加えて魔力をため込んだ父親の心臓が山に魔力−−霊気とも呼ばれるもの−−を与えてしまい、時間をかけて一部の神話生物たちが活性化したことが影響している。<br>
+                山に息を潜めていたキノトグリスもその魔力を受けてか長い時間をかけ、<highlight-style>納骨堂の神・モルディギアン<small-style>（基本/P.249）</small-style></highlight-style>に形を変えた。（葬儀の神キノトグリスと納骨堂の神モルディギアンは、死を司るという点において大元の存在は同一のものとして今シナリオでは解釈および定義している）<br>
+                これによりモルディギアンの神官の食屍鬼がドリームランドより訪れ、山の食屍鬼たちを統率するようになる。<br>
+                食屍鬼たちは現代日本において食材を確保するため、木明社の人間とやりとりし遺体の誘致・すり替えを行うことになる。それを怪しんだ内部の人間・<ruby-style ruby="ばとう">馬頭</ruby-style>がHO2に調査を頼むことでHO2はHO1の存在する山へとたどり着くこととなるだろう。<br>
+                <br>
+                その後、HO1とHO2の接触を皮切りに円山や魔力の在処を探る食屍鬼たちによって物語は展開していくこととなる。食屍鬼にとってHO2は食糧だ。襲われ怪我をしたHO2はHO1の住む家で世話になりながら暮らし、山の成り立ちや今も山に棲まう鬼の性質、〈カーの分配〉の存在などを知る。<br>
+                そして父親およびHO1の心臓の在りかを見つけて自分のものとする時、魔力を自身のものにするべく食屍鬼たちやモルディギアンが襲いかかるだろう。ティンダロスの猟犬を利用することで食屍鬼たちの力を弱めることが出来なければ、町は変わらず食屍鬼たちによる侵食を受けるものとなる。いずれにせよ、どのような選択を行うかは探索者次第だ。
+              </main-text>
+              <div>
+                <paragraph-style id="forKP_01-1">
+                  （簡易版）
+                </paragraph-style>
+                <main-text>
+                  HO1は仮死状態の人間としてやべー時間をやべー山で過ごしてる！そこに完全外部の人間であるHO2が来たことにより事態が進行する！食屍鬼が邪魔するなか心臓取り戻したりしつつなんとか山から下りたり下りなかったり好きにしよう！最終的にひょんなことからやってきたティンダロスの猟犬とミゼーアで食屍鬼の目論見を打破できるかもしれない！！その場合、山は死ぬ。
+                </main-text>
+              </div>
+              <div>
+                <paragraph-style id="forKP_01-2">
+                  （時系列）
+                </paragraph-style>
+                <for-kp-text>
+                  キノトグリス「こんちわ！この山もらいます！」<br>
+                  町「すごい人死んでるーーーー！？寺建てるか！」<br>
+                  僧たち「きのと様、鎮まれ〜〜〜〜〜！！！」in寺<br>
+                  キノトグリス「オッケー」<br>
+                  町「いっぱい人死んだわ」<br>
+                  木ノ徒（木明社）「葬儀します」<br>
+                  ↓<br>
+                  ↓（遺体の処理が追いつかない間にモルディギアン爆誕）<br>
+                  ↓<br>
+                  円山「元人間で食屍鬼の俺、ひょんなことから覚醒世界に！？」<br>
+                  寺「誰！？鬼！！！祓うから遺体の処理してほしいな」<br>
+                  円山「ＯＫ」<br>
+                  ↓ちょっと経つ<br>
+                  HO1の父親「ここが山か〜」<br>
+                  円山「うわ！！新鮮な人間！！抗えねえ〜！」襲っちゃう<br>
+                  HO1の父親「あ痛！！！！！！」素質があり食屍鬼になる<br>
+                  円山「俺と一緒じゃん」<br>
+                  HO1の父親「しょうがないから山に住むか…」<br>
+                  ↓しばらく暮らす<br>
+                  ニョグタ「食屍鬼の気配！俺も行っちゃおうかな〜！」人間の夢に侵入<br>
+                  寺の僧「なんか聞こえる！助けて！ニョグタ様ーーーーーー！！！」召喚<br>
+                  ニョグタ「こんちわ！寺の人間食べます！」<br>
+                  寺「ウワーーーーーーーーーー！！！！！」いっぱい死ぬ<br>
+                  HO1の父親「死体にゃ抗えねえ〜！！」食べちゃう<br>
+                  HO1「生き残った」<br>
+                  HO1の父親「育てるわ」<br>
+                  円山「死ぬって」<br>
+                  HO1の父親「カーの分配で守る」<br>
+                  ↓HO1の父親、カーの分配によりHO1を守るため力を使い果たす<br>
+                  円山「面倒見るか…」<br>
+                  HO1「なんも分からんけど生きてる！！」<br>
+                  ↓<br>
+                  ↓（すごい長い時間）<br>
+                  ↓<br>
+                  ↓（HO1の父親の魔力が時間をかけて山に行き渡る）<br>
+                  ↓<br>
+                  モルディギアン「力が沸いてきた！ウオオ！」<br>
+                  食屍鬼「ウオオオ！」<br>
+                  ↓<br>
+                  ↓<br>
+                  食屍鬼「もっと食べたい！死体ほしい！葬儀屋からもらうか！」<br>
+                  木明社「怖。HO2〜！調べて〜！」<br>
+                  HO2「りょ」<br>
+                  食屍鬼「死体も力も欲しい！魔力籠もってる心臓あるらしい、探すか」<br>
+                  ↓<br>
+                  HO1「人間だ〜！」<br>
+                  HO2「誰！？」<br>
+                  円山「HO1を任せられるかもしれん…」<br>
+                  食屍鬼「ちょうど良いじゃん！！心臓探して〜！」<br>
+                  HO2「何！？」
+                </for-kp-text>
+              </div>
+              <div>
+                <paragraph-style id="forKP_01-3">
+                  参考・引用文献の略記について
+                </paragraph-style>
+                <list-style>
+                  <list-item>
+                    <bold-style>『クトゥルフ神話TRPG』P.00→ (基本/P.00)</bold-style><br>
+                  </list-item>
+                  <list-item>
+                    <bold-style>『マレウス・モンストロルム』P.00→ (MM/P.00)</bold-style>
+                  </list-item>
+                </list-style>
+              </div>
+              <div>
+                <paragraph-style id="forKP_01-4">
+                  登場する神話生物
+                </paragraph-style>
+                <list-style>
+                  <list-item>
+                    <bold-style>食屍鬼（基本/P.180）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>ニョグタ（基本/P.222-223）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>ティンダロスの猟犬（基本/P.00）</bold-style>
+                  </list-item>
+                </list-style>
+                <main-text>
+                  ▼基本ルールブック非掲載
+                </main-text>
+                <list-style>
+                  <list-item>
+                    キノトグリス、シノーソグリス、サイサロス（MM/P.176）
+                  </list-item>
+                  <list-item>
+                    ティンダロスの王（MM/P.77）、ミゼーア（MM/P.246）
+                  </list-item>
+                  <list-item>
+                    モルディギアン（MM/P.249）
+                  </list-item>
+                </list-style>
+              </div>
+              <div>
+                <paragraph-style id="forKP_01-5">
+                  登場する呪文や書物など<small-style>（直接登場しないものも含める）</small-style>
+                </paragraph-style>
+                <list-style>
+                  <list-item>
+                    <bold-style>呪文の描写（基本/P.153）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>魔力を付与する呪文（基本/P.285）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>火鉢に魔力を付与する（基本/P.286）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>カーの分配（基本/P.254）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>神格との接触の呪文（基本/P.261）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>ニョグタの招来/退散（基本/P.263）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>心臓の探求（基本/P.264）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>接触の呪文（基本/P.267）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>食屍鬼との接触（基本/P.268）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>ティンダロスの猟犬との接触（基本/P.268）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>モートランのガラスの製造（基本/P.289）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>レレイの霧の創造（基本/P.292）</bold-style>
+                  </list-item>
+                  <list-item>
+                    <bold-style>ラヴクラフト作品中の出来事の年表（基本/P.340）</bold-style>
+                  </list-item>
+                </list-style>
+                <main-text>
+                  ▼基本ルールブック非掲載
+                </main-text>
+                <list-style>
+                  <list-item>
+                    ティンダロスの時空能力（MM/P.79）
+                  </list-item>
+                  <list-item>
+                    ニョグタとそのカルト（MM/P.227）
+                  </list-item>
+                  <list-item>
+                    食屍鬼写本（MM/P.250）
+                  </list-item>
+                </list-style>
+              </div>
+            </div>
+            <div>
+              <section-style id="forKP_02">
+                主要NPC/神話生物
+              </section-style>
+              <npc-data>
+                <npc-name>HO1の父親</npc-name>
+                <npc-memo>
+                  シナリオから名前は設定されていない。寺の稚児であったHO1を拾い育てた。呪文〈カーの分配〉により自身の心臓に力を注ぎきり、既に死んでいる。
+                </npc-memo>
+              </npc-data>
+              <npc-data>
+                <npc-name><ruby-style ruby="まるやま">円山</ruby-style></npc-name>
+                <npc-memo>
+                  ドリームランドからやってきた食屍鬼。元は人間だったが、<span class="highlight-style fw-bold">「食屍鬼写本」<span class="small-style">（MM/P.250）</span></span>を読んでしまったことにより呪い「屍肉喰らいの生」を受け食屍鬼化した。ドリームランドでは永久的に食屍鬼の姿をとるが、覚醒世界では人間の姿をしている。<br>
+                  HO1の父親の知り合いであり、HO1の世話を任された。そのため、父親の死後は定期的にHO1の面倒を見ている。HO2のことは捕食対象として認識している。
+                </npc-memo>
+              </npc-data>
+              <npc-data>
+                <npc-name><ruby-style ruby="ばとう">馬頭</ruby-style></npc-name>
+                <npc-memo>
+                  HO2の務める葬儀屋、木明社のえらい人。老年にさしかかってはいるが、男尊女卑のきらいがある社内でも刷新的な考えを持ち、柔軟な性格をしている。<br>
+                  年老いてからは身を引いたが、探索者に半端に足を突っ込んでいた人間でありクトゥルフ神話事象の存在をなんとなく知っている。<br>
+                  探索者らしく基本的に好奇心が高く様々なことについてフットワークが軽い。HO2のことを信用したり心配したりしてくれる。
+                </npc-memo>
+              </npc-data>
+              <div>
+                <paragraph-style id="forKP_02-1">
+                  その他NPC
+                </paragraph-style>
+                <npc-data>
+                  <npc-name><ruby-style ruby="ふるくら">古熊</ruby-style></npc-name>
+                  <npc-memo>
+                    喫茶店のマスター。噂話に詳しい。
+                  </npc-memo>
+                </npc-data>
+                <npc-data>
+                  <npc-name><ruby-style ruby="しだ">羊歯</ruby-style></npc-name>
+                  <npc-memo>
+                    図書館司書。探索者であることをきっかけに馬頭と知り合った。禁書室を管理している。
+                  </npc-memo>
+                </npc-data>
+              </div>
+              <div>
+                <paragraph-style id="forKP_02-2">
+                  神話生物
+                </paragraph-style>
+                <npc-data>
+                  <npc-name>食屍鬼</npc-name>
+                  <npc-memo>
+                    ドリームランドに生息している。ドリームランドから洞窟を通じて日本社会に移動し、虎落町の遺体を攫い食べている集団。モルディギアンを信仰しており、ニョグタの眷属である。ドリームランドの洞窟／虎落町の下水に住んでいる。<br>
+                    シナリオ開始前ごろに魔力が籠もったHO1の父親の心臓が山にあることで活性化し、さらなる組織の拡大化を狙う。<br>
+                    父親の心臓を得るためにHO1を食屍鬼化する、または殺害し心臓を自分たちのものにしようと動く。<br>
+                    HO2は捕食対象。
+                  </npc-memo>
+                </npc-data>
+                <npc-data>
+                  <npc-name>食屍鬼の神官</npc-name>
+                  <npc-memo>
+                    食屍鬼たちの群れを統べる神官であり、紫のローブを着用している。当シナリオでは他の食屍鬼よりも知能が高く、人間社会への適応についてもひと役買う。町で起きている事件はだいたいこの神官が指揮をとっている。
+                  </npc-memo>
+                </npc-data>
+                <npc-data>
+                  <npc-name>モルディギアン</npc-name>
+                  <npc-memo>
+                    納骨堂の神として山に放置された遺体を管理しているため、父親の心臓、HO1の心臓のいずれかをHO1が取り込むことで領域を侵されたと判断し、探索者たちに攻撃を行う。
+                  </npc-memo>
+                </npc-data>
+                <npc-data>
+                  <npc-name>ニョグタ</npc-name>
+                  <npc-memo>
+                    夢を通じて人間に干渉し魔術などを施す。寺の僧が被害者となってからは顕現していなかったが、HO2が現れたことで影響し始める。蔵で退散が可能。退散しなかった場合、クライマックスにて餌を求めて洞窟に現れる。
+                  </npc-memo>
+                </npc-data>
+                <npc-data>
+                  <npc-name>ティンダロスの猟犬</npc-name>
+                  <npc-memo>
+                    廃寺に残されたアイテム：魔力を付与された火鉢によって偶発的に発生した《モートランのガラスの製造》によりHO1の存在を検知する。クライマックス後、HO1が心臓を得ることではっきりと居場所を特定し襲いかかる。父親の心臓からPOWを抜き取り、ティンダロスの王・ミゼーアを召喚する。
+                  </npc-memo>
+                </npc-data>
+                <npc-data>
+                  <npc-name>ティンダロスの王（ミゼーア）</npc-name>
+                  <npc-memo>
+                    ティンダロスの猟犬により顕現する不可視の狼。飢えた獣として山ごと魔力を喰らい尽くす。
+                  </npc-memo>
+                </npc-data>
+              </div>
+            </div>
+            <div>
+              <section-style id="forKP_03">
+                秘匿ハンドアウト内容
+              </section-style>
+              <div>
+                <paragraph-style id="forKP_03-1">
+                  HO1：愛煙家
+                </paragraph-style>
+                <main-text>
+                  長らく山奥の廃寺でひとり生活しており、世間知らずな一面がある。<br>
+                  廃寺といっても、人ひとりが住むには十二分な広さをしている家屋で生活には困らない。<br>
+                  立派な書斎があり、それによってかある程度の教養は持ち得ていても良い。<br>
+                  <br>
+                  自分の出生については曖昧で、もう何年もここで暮らしている気さえする。<br>
+                  父親がいたことはなんとなく覚えているが顔も思い出せない。<br>
+                  <br>
+                  あなたがこの場所から抜け出したいと思っているか、そうでないかは好きにしてよい。<br>
+                  例え抜け出したくとも、あなたはこの廃寺から出て生活することは難しいと感じている。<br>
+                  この家を出て1kmほどがあなたの活動限界範囲であり、それ以上先に進むと寒気がする。<br>
+                  さらには頭痛や目眩、吐き気に襲われてろくに動くことが出来ない。<br>
+                  <br>
+                  具合が悪くなった時や空腹時、<highlight-style>【煙草】</highlight-style>はあなたを楽にしてくれるアイテムになる。<br>
+                  これを吸うとふっと楽になり、意識がはっきりするようにあなたは感じている。<br>
+                  煙草はよくこの家に訪れる"<ruby-style ruby="まるやま">円山</ruby-style>"という男が、食糧と共に届けてくれるものだ。シガーケースに入れて寄越されるもので、銘柄などは知らない。<br>
+                  また、あなたは調香の能力に優れており、"円山"に調香した素材や山で取れる材料を渡すことで物々交換としている。
+                </main-text>
+                <info-text>
+                  推奨：<success-roll>〈芸術：調香〉 〈聞き耳〉〈回避〉</success-roll>
+                </info-text>
+                <div class="mt-5">
+                  <list-style>
+                    <list-item>
+                      <bold-style>機械音痴</bold-style><br>
+                      電子機器などには疎い。PC作成時<span class="highlight-style fw-bold">〈電気修理〉、〈機械修理〉、〈コンピューター〉</span>の取得を不可とする。<br>
+                      その代わり、D特徴として扱い<span class="highlight-style fw-bold">1D6*10P分</span>の趣味ポイントを追加で取得可能。（任意）<br>
+                      （D特徴：2015/P.17-の表記に準ずる）
+                    </list-item>
+                    <list-item>
+                      <bold-style>技能：〈芸術：調香〉</bold-style><br>
+                      初期値を<span class="highlight-style fw-bold">〈DEX*3〉</span>とする。材料を調合し、精油などを作成することが出来る。<br>
+                      精油は心を癒やすだけでなく、傷の治りにも影響があるだろう。
+                    </list-item>
+                    <list-item>
+                      <bold-style>EDU上限</bold-style><br>
+                      EDUの上限を１２とする。ダイスにて１２以上の値が出た場合は他のステータスへポイントを移行してもよい。（基本/P.45記載ルールに準ずる）
+                    </list-item>
+                    <list-item>
+                      <bold-style>POWについて</bold-style><br>
+                      長年山で過ごしてきた所為か正気と狂気の境界が曖昧であり、故に脅かされることがない。<br>
+                      探索者作成時、POWの値を空欄にする。<span class="highlight-style fw-bold">〈幸運〉</span>ロール使用不可。<br>
+                      正気度ロールの際には別途KPから処理を伝える。<br>
+                      <br>
+                      ※コマ登録時はSANの値を0または削除することを推奨する。<br>
+                      ※精神力がまったくない・感情がないなどのRPは強要されない。探索者の性格などは自由にしてほしい。
+                    </list-item>
+                  </list-style>
+                </div>
+                <for-kp-text>
+                  「機械音痴」については任意項目のため、KPPLがサプリ未所持の場合はRPの参考程度に留めCSには反映しなくともよい。<br>
+                  HO1の正気度処理については後述する<link-style link="#forKP_04">［ギミック］</link-style>を参照のこと。
+                </for-kp-text>
+              </div>
+              <div>
+                <paragraph-style id="forKP_03-2">
+                  HO2：嫌煙家
+                </paragraph-style>
+                <main-text>
+                  昔からどうにも煙草というものが好きになれず嫌煙家だ。<br>
+                  それ故か、あなたは人よりも匂いに敏感なところがある。<br>
+                  <highlight-style>煙草が嫌いな理由</highlight-style>についてはPLが好きに決めてよい。<br>
+                  <br>
+                  依頼を受けられる立場や性格であれば職業は自由。<br>
+                  後述する葬儀屋・木明社に属する会社員としても行動が可能。<br>
+                  <br>
+                  忙しない日々を過ごす折、街に妙な噂が流れ始めた。<br>
+                  「夜に死体が街をうろついているのを見た」「街に死体が増えている」「死体が襲いかかってくる」…。<br>
+                  あなたは葬儀屋・木明社より、この噂について調査するよう命じられることとなる。<br>
+                  <br>
+                  シナリオ開始後、HO1の住む場所へ"調査"に向かうことになる。<br>
+                  調査の名目はHO1と合流する時点で秘匿するものとし、別の理由を立てて家へと入り浸ることになる。<br>
+                  （理由はシナリオから提供される、合流以降は好きなタイミングで理由を開示してよい）
+                </main-text>
+                <info-text>
+                  推奨：<success-roll>ある程度のHP（13以上を推奨） 〈聞き耳〉 〈回避〉 〈図書館〉</success-roll><br>
+                  準推奨：<success-roll>〈交渉技能〉</success-roll>※あると触れるがなくてもクリアには支障がない
+                </info-text>
+                <for-kp-text>
+                  <link-style link="#forKP_04-2">［ギミック］</link-style>に詳細を記載しているが、HO2は度々<success-roll>〈CON×5〉</success-roll>ロールが発生し、判定次第ではCONが減っていく。（永久喪失ではないが、HP上限が減少するおそれがある）怪我を負うことも多いHOとなるため、推奨技能にある「ある程度のHP」は直接生還率に影響する。<br>
+                  SAN減少する箇所が多いので、正気度が極端に低い探索者は推奨されない。
+                </for-kp-text>
+                <div class="mt-5">
+                  <list-style>
+                    <list-item>
+                      <bold-style>木明社について</bold-style><br>
+                      昔ながらの葬儀屋。歴史はそれなりに長く、そのため社風も古い。<br>
+                      いかにもな男尊女卑の気があるせいか、最近は新人の離職率に悩んでいる。<br>
+                      社内の高年齢化を目下の課題としているが、改善される気配はあまり見受けられない。<br>
+                      <br>
+                      職員の場合、普段は街中で葬儀屋として霊安室の管理業務を行っている。<br>
+                      仕事の内容としては系統病院まで出向き遺体移送や当番をすることが多いだろう。
+                    </list-item>
+                  </list-style>
+                </div>
+                <info-text>
+                  <bold-style>【職業技能：葬儀屋】</bold-style><br>
+                    <success-roll>〈目星〉、〈聞き耳〉、交渉系技能、〈精神分析〉、〈運転（自動車）〉、〈組みつき〉など近接系技能</success-roll><br>
+                    <span class="small-style">※〈組みつき〉など近接系技能については、移送時などの持ち運びによるものを想定している。</span>
+                </info-text>
+                <list-style>
+                  <list-item>
+                    <bold-style>継続探索者限定・選択ルール</bold-style><br>
+                    PLが望むのであれば、既存の技能から<span class="highlight-style fw-bold">〈聞き耳〉</span>にポイントを20ポイントまで移行することが出来る。<br>
+                    あくまで既存のポイントを移動するに留めること。技能の上限は各卓ハウスルールに委ねる。
+                  </list-item>
+                </list-style>
+              </div>
+              <div>
+                <paragraph-style id="forKP_03-3">
+                  HOごとの特徴
+                </paragraph-style>
+                <main-text>
+                  HOによって得られる情報や個別行動の量が異なるため、以下をHO決定の指針にしてほしい。必要であればPLに一部を伝え、相談するとよい。<br>
+                  下記の内容を含んだ<link-style link="https://kuizy.net/analysis/24625">HO診断</link-style>も存在している。
+                </main-text>
+                <list-style>
+                  <list-item>
+                    <bold-style>［ HO1 ］</bold-style><br>
+                    物語の内側に踏み込んだハンドアウトであり、代わりに山の外側からの情報は得られにくい。個別行動などはHO2よりも控えめで得られる情報量は少なめだが、自分だけが認知できる情報などが細かく存在している。情緒を楽しむ人向け。
+                  </list-item>
+                  <list-item>
+                    <bold-style>［ HO2 ］</bold-style><br>
+                    物語の外側に位置するハンドアウトであり、ある程度自分の考えを持ち自由に動くことが出来る。HO1よりも個別行動が多く、NPCとの関わりは広く浅いが、その分HO1と積極的に関われる状態になることが望ましい。情報を楽しむ人向け。
+                  </list-item>
+                </list-style>
+              </div>
+            </div>
+          </div>
+          <div>
+            <section-style id="forKP_04">
+              ギミック
+            </section-style>
+            <div>
+              <paragraph-style id="forKP_04-1">
+                HO1：狂気の境
+              </paragraph-style>
+              <main-text>
+                HO1は<highlight-style>〈呪文：カーの分配〉</highlight-style>によって自身のエッセンス（心臓）を別の箇所に置いていることをシナリオ開始時点で認知していない。そのため、「心臓を取り込んで初めてPOWを得る」こととしている。クライマックス時、HO1が自身または父親の心臓を得る場合、<highlight-style>【3D6】</highlight-style>を行いPOWの値を決定する。<small-style>（シナリオ中に記載あり）</small-style><br>
+                それまで正気度ロールの際は以下の処理となる。
+              </main-text>
+              <list-style>
+                <list-item>
+                  HO1が一人の時はSANcが発生しない。
+                </list-item>
+                <list-item>
+                  HO2と共に行動している時のみSANcの代わりに<success-roll><bold-style>〈1d100〉</bold-style></success-roll>を行う。<br>
+                  →<success-roll><bold-style>〈1d100〉</bold-style></success-roll>の出目がHO2の出目よりも<br>
+                  <success-roll>低い：成功</success-roll>、<failure-roll>高い：失敗</failure-roll>とする。
+                </list-item>
+                <list-item>
+                  <roll-style>{SANc回数}</roll-style>、<success-roll>{成功数}</success-roll>をKPはカウントしておく。
+                </list-item>
+                <list-item>
+                  【寺周辺】探索時において、<success-roll>{成功数}×10</success-roll>のロールが発生する。
+                </list-item>
+                <list-item>
+                  【心臓の探求】成功時、<roll-style>{SANc回数}×10</roll-style>のロールが発生する。
+                </list-item>
+              </list-style>
+              <main-text>
+                HO1はHO2のそばにいるほどクライマックスでの判定が有利になる。<br>
+                探索時、以下の描写とルールをHO1に提示する。<small-style>（シナリオ中に記載あり）</small-style>
+              </main-text>
+              <copy-text-ho1 copy-id="secret1">
+                あの時、倒れていた#名称2#の表情を思い描く。程度はともかくとして、そこには正気と狂気がない交ぜになった恐怖が揺らめいていたような気がする。<br>
+                鏡で自分の姿を見ないようになって久しいが、自分もあのような表情を浮かべることがあるのだろうか？<br>
+                #名称2#と近くにいると、妙に心がざわつく。これまでになかった生活の変化によるものなのかもしれない。<br>
+                その確かな正体は知れないが、#名称2#が円山以外に会話を交えることのできる初めての人間であることには違いない。
+              </copy-text-ho1>
+              <copy-text copy-id="secret1-1">
+                -----------------------------------------<br>
+                ▶【正気度ルール】<br>
+                ※PL情報：<br>
+                以後、#名称2#と共に行動している時にのみ〈正気度ロール〉が発生するようになる。<br>
+                #名称2#の正気度ロール後、〈1d100〉を行うこと。成否についてはKPが管理する。<br>
+                #名称1#のみの個別探索の場合は発生しない。<br>
+                -----------------------------------------
+              </copy-text>
+              <for-kp-text>
+                ※HO2に秘匿で発生するSANcは適応しなくともよい。
+              </for-kp-text>
+            </div>
+            <div>
+              <paragraph-style id="forKP_04-2">
+                HO2：死の煙
+              </paragraph-style>
+              <main-text>
+                モルディギアンはこの山すべての生命を死によって管理している。山は冷気によって覆われ、人々に秘匿されている部分も多い。HO1は円山の寄越す煙草（人間の灰で出来ているもの）によって山からの強い影響は受けないが、HO2は嫌煙家故にその手立てを持たない。度々モルディギアンの害に悩まされることだろう。<br>
+                探索中、HO2はモルディギアンの影響を受ける。２箇所探索するごとに（シナリオ内で1日経過するごとに）<highlight-style>〈CON×5〉</highlight-style>ロールが発生し、失敗するとどんどん手足が冷えていく現象に見舞われる。
+              </main-text>
+              <copy-text copy-id="copy2">
+                <bold-style>失敗：１回目</bold-style><br>
+                ふと気付けば、手先の温度がふっと消えていることに気付く。<br>
+                指先はまるで血が通っていないかのように白かった。<br>
+                <span class="highlight-style fw-bold ms-0">HP-1</span>
+              </copy-text>
+              <copy-text copy-id="copy3">
+                <bold-style>失敗：２回目</bold-style><br>
+                異様に寒気を感じる。気温そのものに変化はない筈だが、身体が心から冷えており震えるような冷気に包まれている。<br>
+                腕からは血色が失われ、なんとなく足元も地に足がついていないような奇妙な感覚があった。<br>
+                <span class="highlight-style fw-bold ms-0">HP-1D2</span><br>
+                <span class="text-roll text-roll--san fw-bold ms-0">SANc0/1</span>
+              </copy-text>
+              <copy-text copy-id="copy4">
+                <bold-style>失敗：３回目</bold-style><br>
+                寒さで身体は霜で覆われたように身動きが取りにくく、思考からも熱を奪うようであった。<br>
+                この場所にこれ以上いたら、一体自分の身体はどうなってしまうのだろうか。<br>
+                命の灯火をあっけなく消されてしまうような、恐ろしい予感が冷気とともに身体を巡っていった。<br>
+                <span class="highlight-style fw-bold ms-0">CON-1</span><br>
+                <span class="text-roll text-roll--san fw-bold ms-0">SANc1/1D3</span>
+              </copy-text>
+              <copy-text copy-id="copy5">
+                <bold-style>失敗：４回目</bold-style><br>
+                寒さで歯がかじかむ。景色に不釣り合いなほど、自身の身体は冷え切って重い。<br>
+                思考が霧がかり、その中から手のひらが伸びている。死へ誘うように、死神の居場所を知らせるように。さて死神の手を取れば、痛いほどの冷気から解放されるのではなかろうか。悍ましく甘い誘いが細い糸のように自身の身体を伝い、纏っていた。<br>
+                <span class="highlight-style fw-bold ms-0">CON-1</span><br>
+                <span class="text-roll text-roll--san fw-bold ms-0">SANc1D3/1D6</span>
+              </copy-text>
+              <for-kp-text>
+                ※街での探索はこれに含まない。山でのみ影響が発生する。<br>
+                ※CONの減少はHPにも反映される。山に居続けることの影響となり、基本は当シナリオ内でのみの減少に留まる。（シナリオ終了後に生存していた場合はCON回復）
+              </for-kp-text>
+            </div>
+          </div>
+          <div class="row sample_section_inner text-center my-5 pt-5 pt-md-0 mx-auto">
+            <div class="col-6 text-start link-page ps-0"><a href="kikikimyo_info.html" class="text-link"><span><img class="icon icon-back mt-0" src="./assets/images/next.svg"></span>シナリオ概要</a></div>
+            <div class="col-6 text-end link-page pe-0"><a href="kikikimyo_scenario.html" class="text-link">シナリオ本文<span><img class="icon icon-next mt-0" src="./assets/images/next.svg"></span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Optional JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="./assets/js/Main.js"></script>
+  <script language="javascript" type="text/javascript" src="./assets/js/NameChange.js"></script>
+  <script language="javascript" type="text/javascript" src="./assets/js/MySPIndex.js"></script>
+  <script language="javascript" type="text/javascript" src="./assets/js/MyPCIndex.js"></script>
+  <script language="javascript" type="text/javascript" src="./assets/js/RubyCopy.js"></script>
+  <script language="javascript" type="text/javascript" src="./assets/js/CopyButton.js"></script>
+  <script language="javascript" type="text/javascript" src="./assets/js/MyStyle.js"></script>
+  <script language="javascript" type="text/javascript" src="./assets/js/OptionStyle.js"></script>
+
+  </body>
+</html>
